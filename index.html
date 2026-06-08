@@ -197,6 +197,21 @@
     display: block;
   }
 
+  .hero-right-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted2);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    gap: 12px;
+    border-left: 1px dashed var(--border);
+  }
 
   /* ─── СЕКЦИИ ─── */
   .section-label {
@@ -240,6 +255,21 @@
     filter: grayscale(10%) contrast(1.03);
   }
 
+  .about-photo-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted2);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    gap: 10px;
+    border: 1px dashed var(--border);
+  }
 
   .about-text {
     padding: 80px 60px;
@@ -365,6 +395,23 @@
     text-transform: uppercase;
   }
 
+  .portfolio-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed rgba(201,168,124,0.15);
+    color: var(--muted2);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    gap: 8px;
+    text-align: center;
+    padding: 20px;
+  }
 
   /* ─── ЦЕНЫ ─── */
   .prices {
@@ -624,6 +671,12 @@
   </div>
 
   <div class="hero-right">
+    <!--
+      ФОТО ДЛЯ ГЛАВНОЙ СТРАНИЦЫ
+      Сохраните портрет (на тёмном фоне) рядом с этим файлом
+      и переименуйте в: portrait-dark.jpg
+      Затем раскомментируйте строку ниже:
+    -->
     <img src="portrait-dark.jpg" alt="Ксения Чегорко-Голицына">
   </div>
 
@@ -634,6 +687,11 @@
   <div class="about">
 
     <div class="about-photo">
+      <!--
+        ФОТО ДЛЯ РАЗДЕЛА "ОБО МНЕ"
+        Сохраните портрет (сидя, светлый фон) как: portrait-light.jpg
+        и раскомментируйте строку ниже:
+      -->
       <img src="portrait-light.jpg" alt="Ксения">
     </div>
 
@@ -678,7 +736,7 @@
 
   <div class="portfolio-grid">
 
-    <!-- Работа 1 -->
+    <!-- РАБОТА 1 — сохраните как tattoo1.jpg -->
     <div class="portfolio-item" onclick="openLightbox(this)">
       <img src="tattoo1.jpg" alt="you can stay">
       <div class="portfolio-overlay">
@@ -686,7 +744,7 @@
       </div>
     </div>
 
-    <!-- Работа 2 -->
+    <!-- РАБОТА 2 — сохраните как tattoo2.jpg -->
     <div class="portfolio-item" onclick="openLightbox(this)">
       <img src="tattoo2.jpg" alt="Leo · Созвездие">
       <div class="portfolio-overlay">
@@ -721,6 +779,14 @@
     <!-- РАБОТА 6 -->
     <div class="portfolio-item" onclick="openLightbox(this)">
       <img src="tattoo6.jpg" alt="Fine line">
+      <div class="portfolio-overlay">
+        <span class="portfolio-overlay-label">Fine line</span>
+      </div>
+    </div>
+
+    <!-- РАБОТА 7 -->
+    <div class="portfolio-item" onclick="openLightbox(this)">
+      <img src="tattoo7.jpg" alt="Fine line">
       <div class="portfolio-overlay">
         <span class="portfolio-overlay-label">Fine line</span>
       </div>
